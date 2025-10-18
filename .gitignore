@@ -1,0 +1,7 @@
+# directories and files
+.env
+.vscode/
+cogs/events/__pycache__/
+cogs/commands/__pycache__/
+cogs/tasks/__pycache__/
+db/__pycache__/
