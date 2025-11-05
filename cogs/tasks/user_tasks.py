@@ -57,7 +57,7 @@ class user_tasks(commands.Cog):
                 await message_channel.send(f"Parabéns pra mim!")
             else:
                 # Se não houver nenhum aniversário no dia, retorna nada
-                return
+                print(today == birthdate_corresp)
         
         # Encerra o cursor e a conexão com o banco de dados
         cursor.close()
