@@ -19,7 +19,28 @@ Mesmo que o palavrão utilizado seja composto por mais de uma palavra ele ainda 
 > [!WARNING]  
 > A lista que pode ser encontrada dentro do código pode estar incompleta e pode não identificar todos os palavrões possiveis.
 
-## Testando o projeto
+### Testando o projeto
+
+### Ferramentas necessárias
+O bot utiliza um banco de dados postgresSQL, então será necessário ter instalado em sua máquina o postgreSQL.
+
 ### Bibliotecas necessárias
 
 Para testar este projeto será necessário instalar as bibliotecas do discord, do postgreSQL e do python-dotenv e para isso será necessário rodar em seu terminal este comando: `pip install -r requirements.txt`
+
+### Arquivo necessário
+
+Para testar o projeto também é necessário ter um arquivo .env onde seram armazenados o token do bot, o id do servidor, o id de uma categoria do servidor, os ids dos canais que seram utilizados e o id do usuário do discord.
+
+Basta criar um arquivo chamado **.env** na raíz do projeto e adicionar uma estrutura como a apresentada abaixo:
+``` 
+DISCORD_TOKEN = "token do bot"
+ADM_ID = "id do usuário"
+GUILD_ID = "id so servidor"
+CATEGORY_ID = "id da categoria"
+CONVERSATION_ID = "id do canal"
+WELCOME_CHANNEL_ID = "id do canal"
+```
+
+> [!IMPORTANT]  
+> Caso esteja testando em um sistema linux também será importante colocar nesse arquivo o usuário, a senha e a porta do seu banco de dados.
